@@ -1,0 +1,13 @@
+apply plugin: 'java-library'
+apply plugin: 'kotlin'
+
+dependencies {
+    implementation kotlinLibs.values()
+    testImplementation testLibs.values()
+
+    implementation project(":entities")
+    implementation project(":testShared")
+}
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"

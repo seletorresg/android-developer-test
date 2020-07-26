@@ -1,0 +1,6 @@
+include ':testShared'
+include ':entities'
+include ':data'
+include ':usecases'
+include ':app'
+rootProject.name = "Parking"
